@@ -21,7 +21,6 @@ services:
     environment:
       - SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:${VERSION:-0.28}-nikolaik
       - LOG_ALL_EVENTS=true
-      - WORKSPACE_MOUNT_PATH=/openhands/data
     extra_hosts:
       - "host.docker.internal:host-gateway"
     pull_policy: always
