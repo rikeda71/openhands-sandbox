@@ -7,7 +7,7 @@ services:
     env_file:
       - .env
     ports:
-      - "3000:${PORT:-34567}"
+      - "${PORT:-34567}:3000"
     volumes:
       - type: bind
         source: /var/run/docker.sock
